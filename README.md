@@ -9,7 +9,7 @@ The pipeline solves critical real-world geospatial modeling challenges, includin
 ## Technical Architecture
 
 ```
-Raw Multi-Source Data ────► Harmonization & Spatial Joins ────► Bayesian Spatial Imputation
+Raw Data ────► Harmonization & Spatial Joins ────► Bayesian Spatial Imputation
 (Elections, ISTAT, MEF)     (String normalization, EPSG:32632)   (BYM2 + ADVI)
                                                                             │
                                                                             ▼
@@ -37,8 +37,7 @@ The data extraction module was used to merge more than 20 heterogeneous public d
 * **Geospatial Boundaries:** Municipal administrative boundaries merged and reprojected to `EPSG:32632`.
 
   
-* The final dataset is available on Kaggle[https://www.kaggle.com/datasets/robgaz/electoral-dataset-italy] 
-
+* The final dataset is available on [Kaggle](https://www.kaggle.com/datasets/robgaz/electoral-dataset-italy).
 
 
 ### 2. Bayesian Spatial Imputation (BYM2)
@@ -111,11 +110,15 @@ poetry install
 
 ```
 
+### Data
+
+Download the dataset on  [Kaggle](https://www.kaggle.com/datasets/robgaz/electoral-dataset-italy) and put it inside Elections.
+
 ## Usage
 
 ### Run the End-to-End Pipeline
 
-Execute the full execution flow (data assembly, Bayesian imputation, feature engineering, spatial splitting, model training, and metric evaluation):
+Execute the full execution flow (data importing, Bayesian imputation, feature engineering, spatial splitting, model training, and metric evaluation):
 
 ```
 poetry run python run_pipeline.py
