@@ -20,7 +20,7 @@ Model Output & Artifacts ◄─── Spatial Block Cross-Validation ◄──�
 
 ### 1. Data Ingestion & Geospatial Harmonization
 
-The data extraction module merges more than 20 heterogeneous public datasets at the municipal level (`com_istat_code` / `COMUNE`):
+The data extraction module was used to merge more than 20 heterogeneous public datasets at the municipal level:
 
 * **Electoral Records:** Turnout, total electorate, abstention ratio, and proportional vote shares across all competing national lists.
 
@@ -35,6 +35,9 @@ The data extraction module merges more than 20 heterogeneous public datasets at 
 
 
 * **Geospatial Boundaries:** Municipal administrative boundaries merged and reprojected to `EPSG:32632`.
+
+  
+* The final dataset is available on Kaggle[https://www.kaggle.com/datasets/robgaz/electoral-dataset-italy] 
 
 
 
